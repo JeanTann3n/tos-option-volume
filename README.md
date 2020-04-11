@@ -5,4 +5,4 @@ Refactored and optimized by Wahakalaka.
 
 Make sure to set same-day date alpha transparency in the Study options. CreateColor does not allow alpha to be specified. 
 
-!(/screenshot.PNG)
+![alt text](screenshot.png)
