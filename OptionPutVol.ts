@@ -17,6 +17,8 @@ plot agg_put_vol = fold strike = start_price to end_price with v do v + if isNan
 
 declare lower;
 
+input strike_start = 180;
+input strike_end = 300;
 input date01 = "200409";
 input date02 = "200413";
 input date03 = "200415";
@@ -26,14 +28,14 @@ input date06 = "200501";
 input date07 = "200515";
 input date08 = "200619";
 
-plot put_vol_01 = agg_vol(date01, 180, 300, "P");
-plot put_vol_02 = agg_vol(date02, 180, 300, "P");
-plot put_vol_03 = agg_vol(date03, 180, 300, "P");
-plot put_vol_04 = agg_vol(date04, 180, 300, "P");
-plot put_vol_05 = agg_vol(date05, 180, 300, "P");
-plot put_vol_06 = agg_vol(date06, 180, 300, "P");
-plot put_vol_07 = agg_vol(date07, 180, 300, "P");
-plot put_vol_08 = agg_vol(date08, 180, 300, "P");
+plot put_vol_01 = agg_vol(date01, strike_start, strike_end, "P");
+plot put_vol_02 = agg_vol(date02, strike_start, strike_end, "P");
+plot put_vol_03 = agg_vol(date03, strike_start, strike_end, "P");
+plot put_vol_04 = agg_vol(date04, strike_start, strike_end, "P");
+plot put_vol_05 = agg_vol(date05, strike_start, strike_end, "P");
+plot put_vol_06 = agg_vol(date06, strike_start, strike_end, "P");
+plot put_vol_07 = agg_vol(date07, strike_start, strike_end, "P");
+plot put_vol_08 = agg_vol(date08, strike_start, strike_end, "P");
 
 
 # Data is visualized with an overlayed histogram. 
